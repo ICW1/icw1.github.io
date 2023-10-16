@@ -9,4 +9,4 @@ Hello there! My name is Ian and this is my [blog](/). I am a data scientist who 
 
 ### Contact me
 
-iancrowewright@gmail.com
+iancrowewright (at) gmail (dot) com
