@@ -40,7 +40,7 @@ Inline markup styles:
 > Blockquote
 >> Nested Blockquote
 
-Syntax highlighting can be used with triple backticks, like so:
+Syntax highlighting can be used with triple backticks, like:
 
 ```javascript
 /* Some pointless Javascript */
