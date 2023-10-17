@@ -18,7 +18,7 @@ And see any results on:
 * [World Athletics](https://worldathletics.org/athletes/great-britain-ni/ian-crowe-wright-14547468)
 * [European Athletics](https://www.european-athletics.com/historical-data/athletes/great-britain-ni/ian-crowe-wright-014547468)
 * [Power of 10](https://www.thepowerof10.info/athletes/profile.aspx?athleteid=58087)
-Alternatively, check out my post on creating a "Data Platform" for all my running data, here I share everything that I have collected!
+Alternatively, check out my upcoming post on creating a "Data Platform" for all my running data, here I share everything that I have collected!
 * [Blog: My Running Data Platform + the Reality of Data Science](/my-running-data-platform)
 
 ### Contact me

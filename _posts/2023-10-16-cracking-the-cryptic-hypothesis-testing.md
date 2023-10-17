@@ -1,7 +1,7 @@
 ---
 layout: post
 published: True
-title: Cracking the Cryptic - Hypothesis Testing
+title: PLACEHOLDER - Cracking the Cryptic - Hypothesis Testing
 ---
 
 ## Intro
