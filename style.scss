@@ -865,6 +865,9 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 56px;
   }
 
   .comments {
