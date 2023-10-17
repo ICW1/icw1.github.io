@@ -1,7 +1,7 @@
 ---
 layout: post
 published: True
-title: My Running Data Platform - 0. the Reality of Data Science
+title: My Running Data Platform - 0. The Reality of Data Science
 ---
 
 ### The Reality of Data Science
