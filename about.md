@@ -13,9 +13,9 @@ Hello there! My name is Ian and this is my [blog](/). I am a data scientist who 
 
 I am also a semi-professional runner for [SOAR running](https://www.soarrunning.com/). Feel free to follow my training/progress on:
 * [Strava](https://www.strava.com/athletes/26846960)
-* [Instaram](https://www.instagram.com/iancrowewright/)
+* [Instagram](https://www.instagram.com/iancrowewright/)
 
-And see any results on:
+And see any race results on:
 * [World Athletics](https://worldathletics.org/athletes/great-britain-ni/ian-crowe-wright-14547468)
 * [European Athletics](https://www.european-athletics.com/historical-data/athletes/great-britain-ni/ian-crowe-wright-014547468)
 * [Power of 10](https://www.thepowerof10.info/athletes/profile.aspx?athleteid=58087)
