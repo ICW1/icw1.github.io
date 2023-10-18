@@ -25,6 +25,11 @@ Whilst I will leave the final question to you the reader. We can use a statistic
 
 ### The maths
 
+Let $a, b, c, d$ denote the digits in the top-left, top-right, bottom-left, bottom-right corners, respectively. Normal Sudoku rules give the following constraints:
+$$ a \ne b, a \ne c, b \ne d, c \ne d $$
+where
+$$ a,b,c,d \in \mathbb{N} \[1,2,3,4,5,6,7,8,9\] \N $$
+
 ### The data
 
 ### The test
