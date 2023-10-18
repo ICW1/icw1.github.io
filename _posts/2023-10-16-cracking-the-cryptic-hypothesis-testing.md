@@ -25,22 +25,16 @@ Whilst I will leave the final question to you the reader. We can use a statistic
 
 ### The maths
 
-Let $a, b, c, d$ denote the digits in the top-left, top-right, bottom-left, bottom-right corners, respectively. Normal Sudoku rules give the following constraints:  
+Let _a, b, c, d_ denote the digits in the top-left, top-right, bottom-left, bottom-right corners, respectively. Normal Sudoku rules give the following constraints:  
 
 $$ a \ne b, a \ne c, b \ne d, c \ne d $$  
 
-```math
-a \ne b, a \ne c, b \ne d, c \ne d
-```  
-
 where  
 
-$$ a,b,c,d \in \mathbb{N} \[1,2,3,4,5,6,7,8,9\] \N $$  
-```math
-a,b,c,d \in \mathbb{N} \[1,2,3,4,5,6,7,8,9\] \N
-```
+$$ a,b,c,d \in \mathbb{N}_{[1,9]} $$  
 
-To work out the probability of a 3-in-the-corner we need to count all valid combinations of corner digits and then the number of those which include a three in the corner.
+To work out the probability of a 3-in-the-corner we need to count all valid combinations of corner digits (the above) and then the number of those which include a three in the corner.
+
 ### The data
 
 ### The test
