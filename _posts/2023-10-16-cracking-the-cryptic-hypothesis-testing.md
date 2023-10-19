@@ -121,7 +121,36 @@ Thus:
 
 $$ P(TIT\-C) = 1696 / 4104 \approx 0.4133 $$
 
+#### Quick python sense check
+It's always important to check your work folks. Confession from me, I spent so long thinking about the combinatorical maths of this problem I ended up doing this before I knew the answer in order to to know what I was aiming for!  
 
+```python
+import pandas as pd
+import numpy as np
+
+from itertools import product
+
+# Create an array containing the digits 1 to 9
+digits = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+# Generate all length-4 permutations of the digits using itertools
+perms = list(product(digits, repeat=4))
+
+# Convert the permutations into a Pandas DataFrame
+df = pd.DataFrame(perms, columns=['a', 'b', 'c', 'd'])
+
+# Filter out rows where a == b, a == c, b == d, c == d. (typical Sudoku constraints)
+df = df.loc[
+    (df['a'] != df['b']) & \
+    (df['a'] != df['c']) & \
+    (df['b'] != df['d']) & \
+    (df['c'] != df['d'])
+]
+
+# Get the counts of 3s in the corner, the counts of all possible combinations and the probability
+print((df == 3).any(axis=1).sum(), df.shape[0], (df == 3).any(axis=1).sum() / df.shape[0])
+```
+This outputs: (1696, 4104, 0.4132...)
 
 ### The data
 
