@@ -117,7 +117,7 @@ The are 1696 different occurrences of a _3 in the corner_.
 #### Probability
 We have  
 
-$$ P(TITC) = (N_{TITCs}) / (N_{ALL}) $$  
+$$ P(TITC) = N_{TITCs} / N_{ALL} $$  
 
 Thus  
 
