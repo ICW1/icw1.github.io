@@ -56,7 +56,7 @@ Case 2. $$b = c$$. We have:
 
 $$ 9 \times 8 \times 1 \times 8  = 576 $$  
 
-Total:
+Total (All possibilities):
 
 $$ 3528 + 576 = 4104 $$
 
@@ -68,7 +68,7 @@ Case 1. There is only one TIT-C, $$d \ne 3$$. We have:
 
 $$\begin{bmatrix}3 & b\\c & d\end{bmatrix}$$
 
-Case 1-1. $b \ne c$. We have:
+Case 1-1. $$b \ne c$$. We have:
 - 1 choice for _a_ (3)
 - 8 choices for _b_ (not 3)
 - 7 choices for _c_ (not 3 not _b_)
@@ -84,7 +84,8 @@ Case 1-2. $$b = c$$. We have:
 - 7 choices for _d_ (not 3 not _b_)
 - 4 ways to do this because of rotational symmetry (any of _a,b,c,d_ could be the 3)
 
-$$ 1 \times 8 \times 1 \times 7 \times 4 = 224 $$   
+$$ 1 \times 8 \times 1 \times 7 \times 4 = 224 $$  
+
 Case 2. There are two TIT-Cs, $$d = 3$$. We have:
 
 $$\begin{bmatrix}3 & b\\c & 3\end{bmatrix}$$
@@ -107,13 +108,18 @@ Case 2-2. $$b = c$$. We have:
 
 $$ 1 \times 8 \times 1 \times 1 \times 2 = 16 $$  
 
-Total:  
+Total (TIT-Cs):  
 
 $$ 1344 + 224 + 112 + 16 = 1696 $$
 
-#### probability
+#### Probability
+We have:  
 
-$$ P(TIT-C) = 1696 / 4104 \approx 0.4133 $$
+$$ P(TIT\-C) = (number of corner combinations with a  3 in the corner) / (number of all corner possibilities) $$  
+
+Thus:  
+
+$$ P(TIT\-C) = 1696 / 4104 \approx 0.4133 $$
 
 
 
