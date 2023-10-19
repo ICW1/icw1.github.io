@@ -40,7 +40,7 @@ For the first digit _a_ we have nine possibilities, i.e. the digits 1 to 9. For 
 
 $$\begin{bmatrix}a & b\\c & d\end{bmatrix}$$  
 
-Case 1. $$b \ne c$$. We have:
+Case 1: $$b \ne c$$. We have
 - 9 choices for _a_
 - 8 choices for _b_ (not _a_)
 - 7 choices for _c_ (not _a_ not _b_)
@@ -48,7 +48,7 @@ Case 1. $$b \ne c$$. We have:
 
 $$ 9 \times 8 \times 7 \times 7  = 3528 $$  
 
-Case 2. $$b = c$$. We have:
+Case 2: $$b = c$$. We have
 - 9 choices for _a_
 - 8 choices for _b_ (not _a_)
 - 1 choice  for _c_ (as $b = c$)
@@ -64,11 +64,11 @@ There are 4104 different possibilities for the corner digits under typical sudok
 
 #### Counting only occurrences of a _three in the corner_ [TITC]
 Let $$a=3$$. 
-Case 1. There is only one TITC, $$d \ne 3$$. We have:
+Case 1: There is only one TITC, $$d \ne 3$$. We have
 
 $$\begin{bmatrix}3 & b\\c & d\end{bmatrix}$$
 
-Case 1-1. $$b \ne c$$. We have:
+Case 1-1: $$b \ne c$$. We have
 - 1 choice for _a_ (3)
 - 8 choices for _b_ (not 3)
 - 7 choices for _c_ (not 3 not _b_)
@@ -77,7 +77,7 @@ Case 1-1. $$b \ne c$$. We have:
 
 $$ 1 \times 8 \times 7 \times 6 \times 4 = 1344 $$  
 
-Case 1-2. $$b = c$$. We have:
+Case 1-2: $$b = c$$. We have
 - 1 choice for _a_ (3)
 - 8 choices for _b_ (not 3)
 - 1 choice for _c_ (as $$b = c$$)
@@ -86,11 +86,11 @@ Case 1-2. $$b = c$$. We have:
 
 $$ 1 \times 8 \times 1 \times 7 \times 4 = 224 $$  
 
-Case 2. There are two TITCs, $$d = 3$$. We have:
+Case 2: There are two TITCs, $$d = 3$$. We have
 
 $$\begin{bmatrix}3 & b\\c & 3\end{bmatrix}$$
 
-Case 2-1. $$b \ne c$$. We have:
+Case 2-1: $$b \ne c$$. We have
 - 1 choice for _a_ (3)
 - 8 choices for _b_ (not 3)
 - 7 choices for _c_ (not 3 not _b_)
@@ -99,7 +99,7 @@ Case 2-1. $$b \ne c$$. We have:
 
 $$ 1 \times 8 \times 7 \times 1 \times 2 = 112 $$  
 
-Case 2-2. $$b = c$$. We have:
+Case 2-2: $$b = c$$. We have
 - 1 choice for _a_ (3)
 - 8 choices for _b_ (not 3)
 - 1 choice for _c_ (as $$b = c$$)
@@ -110,19 +110,21 @@ $$ 1 \times 8 \times 1 \times 1 \times 2 = 16 $$
 
 Total (TITCs):  
 
-$$ N_{TITCs} = 1344 + 224 + 112 + 16 = 1696 $$
+$$ N_{TITCs} = 1344 + 224 + 112 + 16 = 1696 $$  
+
+The are 1696 different occurrences of a _3 in the corner_.
 
 #### Probability
-We have:  
+We have  
 
 $$ P(TITC) = (N_{TITCs}) / (N_{ALL}) $$  
 
-Thus:  
+Thus  
 
 $$ P(TITC) = 1696 / 4104 \approx 0.4133 $$
 
 #### Quick python sense check
-It's always important to check your work folks. Confession from me, I spent so long thinking about the combinatorical maths of this problem I ended up doing this before I knew the answer in order to to know what I was aiming for!  
+It's always important to check your work folks. A confession from me, I spent so long thinking about the combinatorics, especially the rotational symmetry part, I ended up coding this check before I knew the answer. That way I knew what I was aiming for!  
 
 ```python
 import pandas as pd
@@ -148,9 +150,12 @@ df = df.loc[
 ]
 
 # Get the counts of 3s in the corner, the counts of all possible combinations and the probability
-print((df == 3).any(axis=1).sum(), df.shape[0], (df == 3).any(axis=1).sum() / df.shape[0])
+n_titc = (df == 3).any(axis=1).sum()
+n_all = df.shape[0]
+
+print(n_titc, n_all, n_titc / n_all)
 ```
-This outputs: (1696, 4104, 0.4132...)
+1696 4104 0.41325536062378165
 
 ### The data
 
