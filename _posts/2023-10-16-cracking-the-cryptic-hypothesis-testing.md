@@ -58,13 +58,13 @@ $$ 9 \times 8 \times 1 \times 8  = 576 $$
 
 Total (All possibilities):
 
-$$ 3528 + 576 = 4104 $$
+$$ N_{ALL} = 3528 + 576 = 4104 $$
 
 There are 4104 different possibilities for the corner digits under typical sudoku constraints.
 
-#### Counting only occurrences of a _three in the corner_ [TIT-C]
+#### Counting only occurrences of a _three in the corner_ [TITC]
 Let $$a=3$$. 
-Case 1. There is only one TIT-C, $$d \ne 3$$. We have:
+Case 1. There is only one TITC, $$d \ne 3$$. We have:
 
 $$\begin{bmatrix}3 & b\\c & d\end{bmatrix}$$
 
@@ -86,7 +86,7 @@ Case 1-2. $$b = c$$. We have:
 
 $$ 1 \times 8 \times 1 \times 7 \times 4 = 224 $$  
 
-Case 2. There are two TIT-Cs, $$d = 3$$. We have:
+Case 2. There are two TITCs, $$d = 3$$. We have:
 
 $$\begin{bmatrix}3 & b\\c & 3\end{bmatrix}$$
 
@@ -108,18 +108,18 @@ Case 2-2. $$b = c$$. We have:
 
 $$ 1 \times 8 \times 1 \times 1 \times 2 = 16 $$  
 
-Total (TIT-Cs):  
+Total (TITCs):  
 
-$$ 1344 + 224 + 112 + 16 = 1696 $$
+$$ N_{TITCs} = 1344 + 224 + 112 + 16 = 1696 $$
 
 #### Probability
 We have:  
 
-$$ P(TIT\-C) = (number of corner combinations with a  3 in the corner) / (number of all corner possibilities) $$  
+$$ P(TITC) = (N_{TITCs}) / (N_{ALL}) $$  
 
 Thus:  
 
-$$ P(TIT\-C) = 1696 / 4104 \approx 0.4133 $$
+$$ P(TITC) = 1696 / 4104 \approx 0.4133 $$
 
 #### Quick python sense check
 It's always important to check your work folks. Confession from me, I spent so long thinking about the combinatorical maths of this problem I ended up doing this before I knew the answer in order to to know what I was aiming for!  
@@ -154,7 +154,7 @@ This outputs: (1696, 4104, 0.4132...)
 
 ### The data
 
-Thanks to reddit users [SirJefferE](https://www.reddit.com/r/crackingthecryptic/comments/10fnp0m/3_in_the_corner_cracking_the_cryptic_origin/j4yaoie/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) and [Same_Historian1922](https://www.reddit.com/r/crackingthecryptic/comments/rwbh8c/does_anyone_know_how_the_3_in_the_corner_meme/jvvnpoc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button). We know the first utterance of the TIT-C gag was in [this video](https://www.youtube.com/watch?v=_NUlaltMzYY), which was released on 2021/02/04. Also that a while later sudoku setter Matyas Martinka themed a [puzzle](https://www.youtube.com/watch?v=PK3RWVx3tpk) directly on the TIT-C phenomena, 2022/04/24. These dates will form the start of our data collection.
+Thanks to reddit users [SirJefferE](https://www.reddit.com/r/crackingthecryptic/comments/10fnp0m/3_in_the_corner_cracking_the_cryptic_origin/j4yaoie/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) and [Same_Historian1922](https://www.reddit.com/r/crackingthecryptic/comments/rwbh8c/does_anyone_know_how_the_3_in_the_corner_meme/jvvnpoc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button). We know the first utterance of the TITC gag was in [this video](https://www.youtube.com/watch?v=_NUlaltMzYY), which was released on 2021/02/04. Also that a while later sudoku setter Matyas Martinka themed a [puzzle](https://www.youtube.com/watch?v=PK3RWVx3tpk) directly on the TITC phenomena, 2022/04/24. These dates will form the start of our data collection.
 
 
 
