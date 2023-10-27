@@ -51,7 +51,7 @@ $$ 9 \times 8 \times 7 \times 7  = 3528 $$
 Case 2: $$b = c$$. We have
 - 9 choices for _a_
 - 8 choices for _b_ (not _a_)
-- 1 choice  for _c_ (as $b = c$)
+- 1 choice  for _c_ (as $$b = c$$)
 - 8 choices for _d_ (not _b_)
 
 $$ 9 \times 8 \times 1 \times 8  = 576 $$  
@@ -160,6 +160,7 @@ print(n_titc, n_all, n_titc / n_all)
 ### The data
 
 Thanks to reddit users [SirJefferE](https://www.reddit.com/r/crackingthecryptic/comments/10fnp0m/3_in_the_corner_cracking_the_cryptic_origin/j4yaoie/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) and [Same_Historian1922](https://www.reddit.com/r/crackingthecryptic/comments/rwbh8c/does_anyone_know_how_the_3_in_the_corner_meme/jvvnpoc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button). We know the first utterance of the TITC gag was in [this video](https://www.youtube.com/watch?v=_NUlaltMzYY), which was released on 2021/02/04. Also that a while later sudoku setter Matyas Martinka themed a [puzzle](https://www.youtube.com/watch?v=PK3RWVx3tpk) directly on the TITC phenomena, 2022/04/24. These dates will form the start of our data collection.
+
 
 
 
