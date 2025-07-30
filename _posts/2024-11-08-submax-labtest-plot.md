@@ -11,7 +11,7 @@ A submaximal lactate test is a running test used to monitor aerobic fitness. It 
 Because you’re not running to exhaustion (unlike a VO₂max test), it’s a safer, repeatable way to track changes in fitness over time—perfect for endurance athletes.
 
 #### What Should We Look For?
-In general, better aerobic conditioning is reflected by:
+In general, better aerobic conditioning <!--more-->is reflected by:
 
 📉 Lower lactate levels at the same speed
 

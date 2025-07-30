@@ -7,7 +7,7 @@ title: Strava + Mistral + MCP
 As a data scientist and an avid runner, I’ve always been fascinated by the patterns in my workouts—especially the ones hiding in plain sight on Strava. Recently, I built a small project to combine both of these passions.
 
 #### What is it?
-This tool connects your Strava activity data with a Large Language Model (LLM) via a custom Model Control Protocol (MCP) server, letting you ask questions about your runs, rides, and other activities in plain English.
+This tool connects your Strava activity data with a Large Language Model (LLM) via<!--more--> a custom Model Control Protocol (MCP) server, letting you ask questions about your runs, rides, and other activities in plain English.
 
 For example, you can ask:
 

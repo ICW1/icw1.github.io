@@ -10,7 +10,7 @@ title: PLACEHOLDER - langhchain chatbots memory
 
 During my time at MindGym I was very fortunate to work on a prototype virtual coach chatbot. This chatbot was the outcome of a design sprint earlier on in 2023. We started with a simple Slack-based ReAct agent (using the [LangChain](https://python.langchain.com/docs/get_started/introduction) python module). The use case for the chatbot product changed multiple times in the development cycle, we had many iterations. It very quickly snowballed with extra features and requirements as we spoke to prospective internal and external clients to assess their needs. You can read more about this process [here](/link-to-linkedin-articles/).  
 
-It has been incredibly interesting to work in a rapidly evolving arm of data science / research. Working with LLMs like the GPT models has been enlightening, these models have opened up a whole new world of possibility. Whilst I worked on all components of our chatbot product, my main remit was memory. This proved a difficult topic, with many challenges and barriers to overcome. But solving these issues has been extremely rewarding. 
+It has been incredibly interesting to work in <!--more--> a rapidly evolving arm of data science / research. Working with LLMs like the GPT models has been enlightening, these models have opened up a whole new world of possibility. Whilst I worked on all components of our chatbot product, my main remit was memory. This proved a difficult topic, with many challenges and barriers to overcome. But solving these issues has been extremely rewarding. 
 
 ## Memory
 
