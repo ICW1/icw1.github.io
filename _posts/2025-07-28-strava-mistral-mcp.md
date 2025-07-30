@@ -28,4 +28,4 @@ This project is also a testbed for experimenting with LLM interaction design on 
 🎥 Watch the demo video here (link coming soon—stay tuned!)
 
 #### Try it yourself
-Check out the code and setup instructions on GitHub if you want to run it with your own Strava (developper) account.
+Check out the code and setup instructions on GitHub at https://github.com/ICW1/strava_mcp_test if you want to run it with your own Strava (developper) account.
