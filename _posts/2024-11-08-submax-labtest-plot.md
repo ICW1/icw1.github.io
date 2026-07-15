@@ -19,7 +19,7 @@ In general, better aerobic conditioning <!--more-->is reflected by:
 
 🧠 Flatter curve = more efficient aerobic system
 
-#### Visulaisation
+#### Visualisation
 Below is a plot which contains all the submax treadmill tests I have done since 2020. 
 
 ![an image alt text]({{ site.baseurl }}/images/submax_tests_lactate_plot.png "Lab test lactates")

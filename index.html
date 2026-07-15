@@ -1,18 +1,259 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+  <title>Ian Crowe-Wright</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ian Crowe-Wright — Senior AI Engineer consulting to leading global enterprises." />
+  <meta property="og:title" content="Ian Crowe-Wright" />
+  <meta property="og:description" content="Senior AI Engineer consulting to leading global enterprises." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/52133502?s=400&v=4" />
+  <meta name="theme-color" content="#0c0a09" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/52133502?s=64&v=4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="alternate" type="application/rss+xml" title="Ian Crowe-Wright" href="/feed.xml" />
+</head>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<body>
+  <nav class="corner-nav"><a href="/blog/">Blog</a></nav>
+  <main class="site">
 
-      <div class="entry">
-        {{ post.excerpt }}
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Ian Crowe-Wright</h1>
+        <p class="hero-sub">
+          Senior AI Engineer / Applied Mathematician /
+          Sub-4-Minute Miler /
+          <a href="https://www.linkedin.com/in/icw/" target="_blank" rel="noreferrer">in/icw</a>
+        </p>
       </div>
+      <div class="hero-img-wrap">
+        <div class="hero-img natural">
+          <img src="/images/my_running.png" alt="A visualisation of a decade of training volume, races, and injuries." />
+        </div>
+        <p class="hero-caption">A decade of my training, racing, and injuries — my favourite dataset. Follow along on <a href="https://www.strava.com/athletes/26846960" target="_blank" rel="noreferrer">Strava</a> or <a href="https://worldathletics.org/athletes/great-britain-ni/ian-crowe-wright-14547468" target="_blank" rel="noreferrer">World Athletics</a>.</p>
+      </div>
+      <a href="#timeline" class="scroll-hint" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+    </header>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <div id="timeline" class="timeline">
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">University of Birmingham</h2>
+          <p class="entry-meta">BSc Mathematics</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            I earned a first class honours degree in Mathematics at Birmingham.
+            The rigour of a pure and applied maths training — proof, probability,
+            and mathematical modelling — became the foundation for everything I've
+            built since: I learned to reason about systems precisely before ever
+            writing production code.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">University of New Mexico</h2>
+          <p class="entry-meta">MSc Applied Mathematics</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            I moved to Albuquerque, USA to study for an MSc in Applied Mathematics,
+            graduating with a 3.99 GPA. My thesis applied control theory to the
+            double pendulum inverted on a cart — a classic hard problem in
+            non-linear dynamics — implemented in MATLAB. Living and training at
+            altitude in the American Southwest also took my running to another level.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">Sky</h2>
+          <p class="entry-meta">Data Scientist · 2019 – 2021</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            I started my industry career at Sky, applying data science across the
+            business: survival and time-series analysis for broadband churn,
+            statistically valid A/B testing to guide technology decisions, and
+            process control for KPI monitoring. I built production environments in
+            GCP with BigQuery and led data science workshops for analyst teams —
+            my first taste of teaching technical practice at scale.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">Ipsos</h2>
+          <p class="entry-meta">Senior Data Scientist · 2021 – 2022</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            At Ipsos I worked on the IRIS Project, the UK's online audience
+            measurement solution. I orchestrated complex data fusions using XGBoost
+            to link millions of devices based on browsing behaviour, implemented
+            anomaly detection to filter unnatural panellist behaviour, and built
+            automated reporting and parameterised Argo/Kubernetes workflows on GCP.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">MindGym</h2>
+          <p class="entry-meta">Data Scientist · 2022 – 2023</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            At MindGym, a behavioural science and coaching company, I created and
+            shipped a virtual coach: a ReAct chatbot agent with retrieval-augmented
+            generation, persistent memory, and tool use — built with LangChain in
+            2022, before "agents" were a buzzword. It was deployed at scale via
+            Slack and launched as a product.
+          </p>
+          <p>
+            I also built the company's data platform, centralising multiple sources
+            into an S3 data lake with Argo workflows on Kubernetes, and collaborated
+            with behavioural scientists on NLP analysis of wellbeing survey data.
+          </p>
+          <div class="entry-img"><img src="/images/langchain_memory_diagram.png" alt="A diagram of an LLM agent architecture with memory." /></div>
+          <p class="entry-img-caption">From my blog post on building LangChain chatbots with memory.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">Travtus</h2>
+          <p class="entry-meta">Senior NLP Data Scientist · 2023 – 2024</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            At Travtus, an AI property management startup, I led the migration from
+            a RASA intent/response framework to a LangChain agent with RAG, chat
+            memory, and fine-tuning — pioneering a process-retrieval approach where
+            the agent selects and plans execution steps from tenant input. I built
+            the evaluation suites and benchmark datasets that made model selection
+            a data-driven decision rather than a matter of taste.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">Connect Earth</h2>
+          <p class="entry-meta">NLP / LLM Data Science Lead · 2024 – 2025</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            At Connect Earth, a carbon accounting fintech, I designed and built an
+            AI-driven carbon categorisation system for banking transactions from
+            scratch — and shipped it to millions of banking customers across the UK
+            and Europe.
+          </p>
+          <p>
+            I fine-tuned open-source LLMs (DistilBERT, Mistral-7B, LLaMA) with
+            quantised LoRA adapters, cutting training time by ~60% and inference
+            latency by over 40% — enabling deployment on small serverless CPU
+            instances. The production pipeline on AWS Lambda, SQS, and SageMaker
+            handled hundreds of thousands of monthly API calls at over 90% precision.
+          </p>
+          <p>
+            I also built the Carbon Copilot: a multi-modal LLM agent (LangGraph +
+            Bedrock + Claude) for emissions reporting and regulatory document Q&amp;A,
+            reducing client reporting time from five-plus minutes to under ten seconds.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">Elsewhen</h2>
+          <p class="entry-meta">Senior AI Engineer · 2025 – Present</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            I now consult to leading global enterprises through
+            <a href="https://www.elsewhen.com/" target="_blank" rel="noreferrer">Elsewhen</a>,
+            a London technology consultancy building AI-driven products.
+            I designed and delivered a multi-index semantic search system for a
+            leading global travel company — vector embeddings combined with
+            structured filters in an OpenSearch query layer, across multi-account
+            AWS infrastructure — now live in production. Beyond delivery, I shape
+            the work itself: converting ambiguous, solution-oriented requirements
+            into structured technical roadmaps, and authoring the AI expertise and
+            feasibility sections of major public sector proposals.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">Running</h2>
+          <p class="entry-meta">Semi-professional athlete</p>
+        </div>
+        <div class="entry-body">
+          <p>
+            Alongside all of the above, I compete as a semi-professional track,
+            road, and cross-country runner for
+            <a href="https://www.soarrunning.com/" target="_blank" rel="noreferrer">SOAR Running</a>.
+            I have represented England multiple times and broken the historic
+            four-minute barrier for the mile. My 5km best is 13:28.
+          </p>
+          <p>
+            The two worlds feed each other: my own training history is my favourite
+            dataset, and it shows up throughout <a href="/blog/">my blog</a> — from
+            injury-risk visualisations to an MCP server that lets an LLM answer
+            questions about my Strava data.
+          </p>
+          <div class="entry-img"><img src="/images/submax_tests_lactate_plot.png" alt="Lactate curves from six years of submaximal treadmill testing." /></div>
+          <p class="entry-img-caption">Six years of my submax lactate tests, visualised — from the blog.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h2 class="entry-title">Next?</h2>
+        </div>
+        <div class="entry-body">
+          <p>
+            I write about applied AI and running data on <a href="/blog/">the blog</a>,
+            and I'm certified as a Google Cloud Professional Machine Learning
+            Engineer. If you'd like to talk about AI engineering, mathematics, or
+            middle-distance running, get in touch.
+          </p>
+          <!-- TODO: add a Download CV button here once a new public-safe version exists
+               (regenerate in a new format — e.g. a styled /cv/ page or Notion export — and
+               strip the phone number before publishing):
+               <a href="/assets/Ian_Crowe-Wright_CV.pdf" class="btn">Download CV</a> -->
+          <a href="https://www.linkedin.com/in/icw/" class="btn" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+          <ul class="socials">
+            <li><a href="https://github.com/ICW1" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/icw/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.strava.com/athletes/26846960" target="_blank" aria-label="Strava"><i class="fa-brands fa-strava"></i></a></li>
+            <li><a href="https://www.instagram.com/iancrowewright/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="mailto:iancrowewright@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <footer class="site-footer">
+      &copy; <span id="year"></span> Ian Crowe-Wright. All rights reserved.
+    </footer>
+  </main>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

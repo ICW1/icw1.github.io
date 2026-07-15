@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<h1 class="page-title">Writing</h1>
+<p class="page-intro">Notes on applied AI, data science, and what a decade of running data can teach you.</p>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <p class="post-date">{{ post.date | date: "%-d %B %Y" }}</p>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="post-excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</div>
+  </li>
+  {% endfor %}
+</ul>
