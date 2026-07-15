@@ -310,6 +310,22 @@ h1, h2, h3 {
   transform: scale(1.03);
 }
 
+/* multiple images in one entry — stacked on phones, side-by-side from tablet up */
+.entry-imgs {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+.entry-imgs .entry-img {
+  margin-top: 0;
+}
+
+.entry-imgs .entry-img img {
+  aspect-ratio: 16 / 10;
+  height: 100%;
+}
+
 .entry-img-caption {
   font-size: 0.72rem;
   color: var(--muted);
@@ -640,6 +656,14 @@ pre code {
 
   .entry-img img {
     aspect-ratio: 16 / 9;
+  }
+
+  .entry-imgs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .entry-imgs .entry-img img {
+    aspect-ratio: 16 / 10;
   }
 }
 
