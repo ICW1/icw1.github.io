@@ -134,9 +134,10 @@ h1, h2, h3 {
 }
 
 .hero h1 {
-  font-size: 2.2rem;
+  font-size: clamp(1.7rem, 8vw, 2.2rem);
   letter-spacing: -0.03em;
   margin-bottom: 0.8rem;
+  white-space: nowrap;
 }
 
 .hero-sub {
@@ -324,6 +325,12 @@ h1, h2, h3 {
 .entry-imgs .entry-img img {
   aspect-ratio: 16 / 10;
   height: 100%;
+}
+
+/* diagrams and plots that must not be cropped */
+.entry-img.contain img {
+  object-fit: contain;
+  background: #fff;
 }
 
 .entry-img-caption {
@@ -635,7 +642,7 @@ pre code {
   }
 
   .hero h1 {
-    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    font-size: clamp(2rem, 3.6vw, 3.2rem);
   }
 
   .hero-img img {
@@ -659,7 +666,9 @@ pre code {
   }
 
   .entry-imgs {
-    grid-template-columns: 1fr 1fr;
+    /* one row: as many equal columns as there are images */
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
   }
 
   .entry-imgs .entry-img img {
@@ -682,7 +691,7 @@ pre code {
   }
 
   .hero h1 {
-    font-size: clamp(2.8rem, 4.5vw, 4rem);
+    font-size: clamp(2.4rem, 3.9vw, 3.4rem);
   }
 
   .timeline {
