@@ -1,6 +1,6 @@
 ---
 layout: post
-published: True
+published: False
 title: Strava + Mistral + MCP 
 ---
 ### Mashing Up Running Data with LLMs: My Strava MCP Project
